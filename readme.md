@@ -156,16 +156,16 @@ Explique com suas palavras:
 
 - Como funciona a comunicação entre o Front-End e o Back-End?
 
-  O Front-End e o Back-End se conversam através de requisições e respostas usando o protocolo HTTP. O Front-End é a parte da tela que o cliente vê e interage, então quando ele preenche o formulário e clica no botão de cadastrar, o navegador envia esses dados em formato JSON para o servidor.
+O Front-End e o Back-End se conversam através de requisições e respostas usando o protocolo HTTP. O Front-End é a parte da tela que o cliente vê e interage, então quando ele preenche o formulário e clica no botão de cadastrar, o navegador envia esses dados em formato JSON para o servidor.
 O Back-End recebe esse pedido, processa a informação, faz as validações, salva no banco de dados e devolve uma resposta dizendo se deu tudo certo ou se teve algum erro para o Front saber o que mostrar na tela.
   
 - Qual é a finalidade do método POST?
 
-  A finalidade do método POST é enviar dados do Front-End para o servidor quando se quer criar um registro novo no banco de dados. Na parte do cadastro que eu fiz, usei o POST no fetch para pegar as informações digitadas nos campos de nome e idade e mandar essas informações dentro do corpo da requisição para o Back-End salvar a nova pessoa.
+A finalidade do método POST é enviar dados do Front-End para o servidor quando se quer criar um registro novo no banco de dados. Na parte do cadastro que eu fiz, usei o POST no fetch para pegar as informações digitadas nos campos de nome e idade e mandar essas informações dentro do corpo da requisição para o Back-End salvar a nova pessoa.
   
 - Por que utilizamos `async/await` e `try/catch`?
 
-  Eu usei o async/await e o try/catch para conseguir trabalhar com requisições assíncronas e evitar que a tela travasse:
+Eu usei o async/await e o try/catch para conseguir trabalhar com requisições assíncronas e evitar que a tela travasse:
 
 async/await: Como a resposta do servidor não é instantânea, o async avisa que a função vai demorar um pouco e o await faz o código esperar o retorno da API antes de ir para o próximo passo. Isso evita tentar redirecionar a página sem os dados estarem salvos.
 
@@ -173,11 +173,11 @@ try/catch: Funciona para tratar os erros. O código tenta fazer a requisição n
 
 - Quais dificuldades você encontrou durante a atividade?
 
-  Assistindo à explicação na aula, eu estava entendendo tudo tranquilamente, mas quando fui fazer a parte do cadastro, eu não sabia por onde começar. Antes eu tinha o apoio do professor e, apesar de estar entendendo a lógica, eu não estava fazendo algo totalmente sozinho. Minha principal dificuldade foi conectar a lógica no início, então o que me ajudou foi voltar nos códigos realizados antes na aula e olhar com mais calma para entender como cada parte funcionava. Depois que analisei as outras partes com mais atenção e peguei a ideia, o resto do desenvolvimento fluiu super bem e consegui fazer tudo funcionar.
+Assistindo à explicação na aula, eu estava entendendo tudo tranquilamente, mas quando fui fazer a parte do cadastro, eu não sabia por onde começar. Antes eu tinha o apoio do professor e, apesar de estar entendendo a lógica, eu não estava fazendo algo totalmente sozinho. Minha principal dificuldade foi conectar a lógica no início, então o que me ajudou foi voltar nos códigos realizados antes na aula e olhar com mais calma para entender como cada parte funcionava. Depois que analisei as outras partes com mais atenção e peguei a ideia, o resto do desenvolvimento fluiu super bem e consegui fazer tudo funcionar.
 
 - Conclusão
 
-  Essa atividade foi muito importante para eu conseguir entender na prática como funciona a integração entre o Front-End, o Back-End e o Banco de Dados. Ao trabalhar com as funções de listar, cadastrar, editar e excluir deu pra ver claramente como a API conecta todas essas partes do sistema. As informações digitadas no HTML são capturadas pelo JavaScript que envia a requisição para o servidor em Node.js com Express e tudo termina salvo ou alterado no banco de dados MySQL. Acompanhar todo esse caminho dos dados junto com o uso do async/await e do try/catch para tratar os erros me deu uma noção muito mais clara e completa de como uma aplicação web funciona em geral.
+Essa atividade foi muito importante para eu conseguir entender na prática como funciona a integração entre o Front-End, o Back-End e o Banco de Dados. Ao trabalhar com as funções de listar, cadastrar, editar e excluir deu pra ver claramente como a API conecta todas essas partes do sistema. As informações digitadas no HTML são capturadas pelo JavaScript que envia a requisição para o servidor em Node.js com Express e tudo termina salvo ou alterado no banco de dados MySQL. Acompanhar todo esse caminho dos dados junto com o uso do async/await e do try/catch para tratar os erros me deu uma noção muito mais clara e completa de como uma aplicação web funciona em geral.
 
 ---
 
